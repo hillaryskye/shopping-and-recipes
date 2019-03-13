@@ -1,2 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+hr {
+    background: blue;
+    border-top: 1px solid rgba(0,0,0,.3);
+    border: 1px outset;
+}
+
+.container {
+    margin: 15px;
+}

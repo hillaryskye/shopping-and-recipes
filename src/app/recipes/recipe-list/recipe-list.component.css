@@ -6,3 +6,9 @@ span {
 .list-group-item {
     display: flex;
 }
+
+hr {
+    background: blue;
+    border-top: 1px solid rgba(0,0,0,.3);
+    border: 1px outset;
+}
