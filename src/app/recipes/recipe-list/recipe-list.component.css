@@ -1,0 +1,8 @@
+span {
+    justify-content: flex-end;
+    padding-left: 10px;
+}
+
+.list-group-item {
+    display: flex;
+}
