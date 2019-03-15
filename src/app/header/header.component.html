@@ -10,13 +10,13 @@
 
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav justify-content-start">
-                <li class="nav-item active"><a (click)="onSelect('recipe')" class="nav-link" href="#" data-toggle="collapse">Recipes</a></li>
+                <li class="nav-item"><a (click)="onSelect('recipe')" class="nav-link" href="#" data-toggle="collapse">Recipes</a></li>
                 <li class="nav-item"><a (click)="onSelect('shopping-list')" class="nav-link" href="#" data-toggle="collapse">Shopping List</a></li>
             </ul>
             <ul class="navbar-nav justify-content-end">
-                <li class="dropdown nav-item">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" data-toggle="collapse">Manage <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                <li class="dropdown nav-item" appDropdown>
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Manage <span class="caret"></span></a>
+                    <ul class="dropdown-menu drowndown-padding" appDropdown>
                         <li class="nav-item"><a class="dropdown-item" href="#" data-toggle="collapse">Save Data</a></li>
                         <li class="nav-item"><a class="dropdown-item" href="#"data-toggle="collapse">Fetch Data</a></li>
                     </ul>
