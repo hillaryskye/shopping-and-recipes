@@ -13,15 +13,23 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { AppRoutingModule } from './app-routing.module';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 
 export let browserRefresh = false;
 
-const appRoutes: Routes = [
-  { path: '',
-    redirectTo: '/',
-    pathMatch: 'full'
-  },
-];
+// const appRoutes: Routes = [
+//   { path: 'recipes', component: RecipesComponent, children: [
+//     { path: ':id/detail', component: RecipeDetailComponent },
+//     { path: 'recipes:id/item', component: RecipeItemComponent } ]},
+//   { path: 'shopping-list', component: ShoppingListComponent },
+//   { path: 'shopping-list:id/edit', component: ShoppingEditComponent },
+//   { path: '',
+//     redirectTo: '/',
+//     pathMatch: 'full'
+//   },
+// ];
 
 @NgModule({
   declarations: [
@@ -33,14 +41,14 @@ const appRoutes: Routes = [
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    DropdownDirective
+    DropdownDirective,
+    RecipeStartComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(
-      appRoutes
-    ) ],
-  providers: [],
+    AppRoutingModule
+  ],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

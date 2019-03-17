@@ -10,15 +10,15 @@
 
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav justify-content-start">
-                <li class="nav-item"><a (click)="onSelect('recipe')" class="nav-link" href="#" data-toggle="collapse">Recipes</a></li>
-                <li class="nav-item"><a (click)="onSelect('shopping-list')" class="nav-link" href="#" data-toggle="collapse">Shopping List</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/recipes" data-toggle="collapse">Recipes</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/shopping-list" data-toggle="collapse">Shopping List</a></li>
             </ul>
             <ul class="navbar-nav justify-content-end">
                 <li class="dropdown nav-item" appDropdown>
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Manage <span class="caret"></span></a>
+                    <a style="cursor: pointer;" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Manage <span class="caret"></span></a>
                     <ul class="dropdown-menu drowndown-padding" appDropdown>
-                        <li class="nav-item"><a class="dropdown-item" href="#" data-toggle="collapse">Save Data</a></li>
-                        <li class="nav-item"><a class="dropdown-item" href="#"data-toggle="collapse">Fetch Data</a></li>
+                        <li class="nav-item"><a class="dropdown-item" style="cursor: pointer;" data-toggle="collapse">Save Data</a></li>
+                        <li class="nav-item"><a class="dropdown-item" style="cursor: pointer;" data-toggle="collapse">Fetch Data</a></li>
                     </ul>
                 </li>
             </ul>
